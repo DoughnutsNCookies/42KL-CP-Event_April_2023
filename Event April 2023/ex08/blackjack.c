@@ -12,7 +12,7 @@ int	main(int ac, char **av)
 			aces++;
 		else if (av[1][i] == 'T' || av[1][i] == 'J' || av[1][i] == 'Q' || av[1][i] == 'K')
 			sum += 10;
-		else if (av[1][i] == '2' || av[1][i] == '3' || av[1][i] == '4' || av[1][i] == '5' || av[1][i] == '6' || av[1][i] == '7' || av[1][i] == '8' || av[1][i] == '9')
+		else if (av[1][i] >= '2' || av[1][i] <= '9')
 			sum += av[1][i] - '0';
 		else
 			return (printf("Invalid card: %c\n", av[1][i]));
