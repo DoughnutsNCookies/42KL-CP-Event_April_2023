@@ -30,4 +30,4 @@ try:
 		server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, message.as_string())
 	print("Email sent successfully")
 except:
-	print("Error: unable to send email")
+	print("Error: Unable to send email")
