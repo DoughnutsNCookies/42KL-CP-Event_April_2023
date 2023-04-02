@@ -10,7 +10,7 @@ int	main(int ac, char **av)
 	{
 		if (av[1][i] == 'A')
 			aces++;
-		else if (av[1][i] == 'T' || av[1][i] == 'J' || av[1][i] == 'Q' || av[1][i] == 'K')
+		else if (av[1][i] == 'T' || av[1][i] == 'J' || av[1][i] == 'D' || av[1][i] == 'Q' || av[1][i] == 'K')
 			sum += 10;
 		else if (av[1][i] >= '2' || av[1][i] <= '9')
 			sum += av[1][i] - '0';
