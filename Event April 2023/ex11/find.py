@@ -7,3 +7,5 @@ if response.status_code == 200:
 	print("Abilities: ")
 	for ability in response.json()["abilities"]:
 		print("-", ability["ability"]["name"].capitalize())
+else:
+	print("Pokemon not found.")
