@@ -1,4 +1,4 @@
 while true
 do
-	echo "yes"
+	ls . | rev | cut -c4- | rev
 done
