@@ -89,11 +89,7 @@ int	main(int ac, char **av)
 	{
 		split = ft_split_charset(av[i], " \n\t\v\f\r");
 		for (int j = 0; split[j] != NULL; j++)
-		{
-			printf("* ");
-			printf("%-*s", max_length, split[j]);
-			printf(" *\n");
-		}
+			printf("* %-*s *\n", max_length, split[j]);
 		ft_freesplit(split);
 	}
 	for (int i = 0; i < max_length + 4; i++)
