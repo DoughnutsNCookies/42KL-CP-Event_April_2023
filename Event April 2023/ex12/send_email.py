@@ -29,5 +29,5 @@ try:
 		server.login(SENDER_EMAIL, password)
 		server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, message.as_string())
 	print("Email sent successfully")
-except:
-	print("Error: Unable to send email")
+except Exception as e:
+	print(f"Error: Unable to send email: {e}")
